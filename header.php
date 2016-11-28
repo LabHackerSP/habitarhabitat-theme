@@ -15,6 +15,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+	<link rel="stylesheet" type="text/css" href="<?php get_stylesheet_directory() ?>wp-content/themes/ultrabootstrap-child/css/menu_sideslide.css">
 </head>
 
 
@@ -84,6 +85,17 @@
 				                'theme_location'    => 'primary',
 				                'depth'             => 8,
 				                'container'         => 'div',
+				                'menu_class'        => 'nav navbar-nav navbar-left',
+				                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+				                'walker'            => new wp_bootstrap_navwalker())
+				            );
+				        ?>
+						<?php
+				            wp_nav_menu( array(
+				                'menu'              => 'secondary',
+				                'theme_location'    => 'footer',
+				                'depth'             => 8,
+				                'container'         => 'div',
 				                'menu_class'        => 'nav navbar-nav navbar-right',
 				                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 				                'walker'            => new wp_bootstrap_navwalker())
@@ -94,7 +106,19 @@
 	</nav>
 </section> <!-- /.end of section -->
 </header>
+<?php 
 
-	<div id=header class="container-fluid" style="background-image:url('<?php header_image(); ?>');">
+ include 'slidemenu.php';
+
+?>
+
+	<div id='header' class="container-fluid" style="background-image:url('<?php header_image(); ?>');">
 		<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
+<div class="col-xs-10 col-xs-offset-1">
+				      	<div class="logo-tag" style="margin-bottom:200px;">
+				      		<img src="http://labhacker.org.br/habitar-habitat/wordpress/wp-content/uploads/2016/11/logoBranco-1.png" alt="logoBranco.png" itemprop="logo" class="custom-logo col-xs-2 col-xs-ofsset-5 center-block" />
+			      			<h2 class="site-description text-center" style="color:<?php echo "#". $header_text_color;?>"><?php bloginfo('description'); ?></h2>
+      						
+      					</div>
+</div>

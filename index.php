@@ -16,11 +16,6 @@ get_header(); ?>
 
 <div class="col-xs-10 col-xs-offset-1">
 <div id="primary" class="content-area">
-				      	<div class="logo-tag" style="margin-bottom:200px;">
-				      		<img src="http://labhacker.org.br/habitar-habitat/wordpress/wp-content/uploads/2016/11/logoBranco-1.png" alt="logoBranco.png" itemprop="logo" class="custom-logo col-xs-2 col-xs-ofsset-5 center-block" />
-			      			<h2 class="site-description text-center" style="color:<?php echo "#". $header_text_color;?>"><?php bloginfo('description'); ?></h2>
-      						
-      					</div>
     <main id="main" class="site-main" role="main">
 
     <?php if ( have_posts() ) : ?>
