@@ -16,6 +16,8 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>-child/css/menu_sideslide.css">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 

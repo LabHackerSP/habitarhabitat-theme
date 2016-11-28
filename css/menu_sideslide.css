@@ -13,7 +13,7 @@
 
 .menu-wrap a:hover,
 .menu-wrap a:focus {
-	color: #fff;
+	color: #d63740;
 	font-weight: bolder;
 	text-decoration: none;
 
@@ -48,10 +48,17 @@
 }
 
 /* Menu Button */
+
+
+.menu-item:nth-of-type(1), .menu-item:nth-of-type(2), .menu-item:nth-of-type(3) {
+	margin-left: -15px;
+	font-weight: bolder;
+}
+
 .menu-button {
 	position: fixed;
     z-index: 1000;
-    margin-top: 30px;
+    margin-top: 15px;
     padding: 0;
     width: 50px;
     height: 40px;
@@ -67,7 +74,7 @@
     top: 10px;
     right: 10px;
     bottom: 10px;
-    left: 14px;
+    left: 13px;
     background: linear-gradient(#fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%);
     content: '';
 }
@@ -78,8 +85,8 @@
 
 /* Close Button */
 .close-button {
-	width: 1em;
-	height: 1em;
+	width: 2em;
+    height: 2em;
 	position: absolute;
 	right: 1em;
 	top: 1em;
@@ -113,13 +120,19 @@
 }
 
 /* Menu */
+
+#menu-logo {
+	width: 100px;
+    margin: 0 0px 25px 25px;
+}
+
 .menu-wrap {
 	position: fixed;
 	top: 0;
 	z-index: 1001;
 	width: 300px;
 	height: 100%;
-	background: #ab010b;
+	background: #252525;
 	padding: 2.5em 1.5em 0;
 	font-size: 1.15em;
 	-webkit-transform: translate3d(-320px,0,0);
