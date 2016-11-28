@@ -6,8 +6,6 @@
  */
 
 get_header(); ?>
-<div class="col-sm-3"><?php get_sidebar(); ?></div>
-<div class="col-sm-7 col-sm-offset-1 max-h">
 <section class="page-section">
 
       <div class="detail-content">
@@ -19,11 +17,10 @@ get_header(); ?>
         <?php endwhile; // End of the loop. ?>
 
     
-        <?php comments_template(); ?>
+        <!-- <?php comments_template(); ?> -->
 
 
                   </div><!-- /.end of deatil-content -->
   			 
 </section> <!-- /.end of section -->  
-</div>
 <?php get_footer(); ?>
