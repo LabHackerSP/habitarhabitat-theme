@@ -18,7 +18,11 @@ body {
   background-color: #e6e8fa !important;
 }
 
-@font-face {
+a, a:visited, a:active {
+  color:#a5151e !important;
+}
+
+font-face {
 	font-family:'Bliss2Regular';
 	src:url('http://www.sescsp.org.br/fonts/Bliss2R.eot');
 	src:url('http://www.sescsp.org.br/fonts/Bliss2R.eot?#iefix') format('embedded-opentype'),url('http://www.sescsp.org.br/fonts/Bliss2R.ttf') format('truetype')
