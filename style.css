@@ -68,8 +68,8 @@ img.wp-post-image:hover {
 }
 #header.container-fluid {
 	padding-bottom: 2%;
-	padding-top: 2%;
 }
+
 #header.container-fluid > .row > .col-xs-3, #header > .row > .col-xs-10 > div, #header .nav li.active, #header .nav li a:hover, #header .nav li a:active, #header .nav li a:focus {
   background: rgba(0,0,0,0.66);
   box-shadow: 0 5px 15px rgba(0,0,0,0.9);
@@ -173,7 +173,7 @@ img.wp-post-image:hover {
 .single-post .titulo {
   font-weight: bold;
   text-transform: uppercase;
-  margin-top:-125px;
-  padding-bottom: 125px;
+  margin-top:-180px;
+  padding-bottom: 180px;
   text-align: center;
 }
