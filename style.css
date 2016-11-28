@@ -18,10 +18,6 @@ body {
   background-color: #e6e8fa !important;
 }
 
-a, a:visited, a:active {
-  color:#a5151e !important;
-}
-
 font-face {
 	font-family:'Bliss2Regular';
 	src:url('http://www.sescsp.org.br/fonts/Bliss2R.eot');
@@ -155,6 +151,11 @@ img.wp-post-image:hover, img.img-responsive:hover {
 
 .theme-showcase .navbar .container {
   width: auto;
+}
+
+
+#conteudo a, #conteudo a:visited, #conteudo a:active {
+  color:#a5151e;
 }
 
 
