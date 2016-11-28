@@ -82,11 +82,10 @@ img.wp-post-image:hover, img.img-responsive:hover {
   border:0;
   height: 40px;
 }
+
 .navbar .logo {
   margin-top: -25px;
 }
-
-
 
 .minimizar {
   height:30px !important;
@@ -157,10 +156,8 @@ img.wp-post-image:hover, img.img-responsive:hover {
 
 /* Single Page CSS */
 .single-post .feat-image {
-  max-height:560px;
+  height:560px;
   overflow:hidden;
-  margin-top:-360px;
-
 }
 
 .single-post .titulo {
