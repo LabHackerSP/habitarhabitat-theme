@@ -14,7 +14,9 @@
 <div class="single-post">
    <div class="post-content">
       <?php if (has_post_thumbnail()) : ?>
-        <?php the_post_thumbnail('full'); ?>
+        <div class='feat-image'>
+          <?php the_post_thumbnail('full'); ?>
+        </div>
       <?php endif; ?> 
     
     <article class="spacer">
