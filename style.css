@@ -1,0 +1,165 @@
+/*
+Theme Name: Ultrabootstrap Child
+Theme URI: http://labhacker.org.br/habitar-habitat/wordpress/
+Description: Bootstrap v.3 basic theme for developers to build their new theme very fast and easy. You can support theme author by <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9HQE4GVV4KTZE" target="donate">donate</a>. To follow what was changed, please look for <a href="https://github.com/Rundiz/bootstrap-basic" target="commits">commits</a> of this theme at Github.
+Template: ultrabootstrap
+Version: 1.0.12
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Text Domain: ultrabootstrap-child
+Domain Path: /languages/
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, front-page-post-form, post-formats, threaded-comments, translation-ready
+
+This theme built with Twitter Bootstrap v.3. It is basic theme with basic style for build new theme with Bootstrap.
+
+*/
+
+body {
+	background:url(img/bg.png) top center repeat;
+}
+@font-face {
+	font-family:'Bliss2Regular';
+	src:url('http://www.sescsp.org.br/fonts/Bliss2R.eot');
+	src:url('http://www.sescsp.org.br/fonts/Bliss2R.eot?#iefix') format('embedded-opentype'),url('http://www.sescsp.org.br/fonts/Bliss2R.ttf') format('truetype')
+}
+
+/* RÉGUA DO SESC */
+#iframebarraportalsesc {	width:100%;	background:#fff;	height:40px}#sesc_header_menu {	position:relative;	margin:auto;	height:30px;	padding:5px 0;	max-width:1200px;	box-sizing:initial; overflow: hidden;}#sesc_header_menu a {	text-decoration:none!important;	color:#000!important;	-webkit-tap-highlight-color:rgba(255,255,255,0);	-webkit-tap-highlight-color:transparent;	line-height:30px!important;	outline:none!important;	letter-spacing:0!important;	font-weight:normal!important;	background-color:transparent!important;	border:none!important}#sesc_header_menu h1 {	float:left;	padding:0;	text-indent:-9999px;	font-size:0;	margin:0 0 0 30px;	height:auto!important}#sesc_header_menu h1 a {	display:block;	width:118px;	height:30px;	background-image:url('http://www.sescsp.org.br/img/logo_sprite.png');	background-repeat:no-repeat; background-size: cover; background-position: top left;}#sesc_header_menu ul {	float:right;	list-style-type:none;	background:#fff;	margin:0;	padding:0}#sesc_header_menu li {	float:left;	margin:0 10px 0 0;	display:block;	padding:0!important}#sesc_header_menu li a {	display:block;	padding:0 10px;	font-size:18px;	font-family:'Bliss2Regular';	text-transform:lowercase}#sesc_menu_toggle {	display:none;	margin-right:30px;	float:right}#sesc_menu_toggle i.up:before {	content:"\f077"!important}.sesc_bg_color_2 {	background:#004c99!important}.sesc_bg_color_3 {	background:#f7bd01!important}.sesc_bg_color_4 {	background:#757678!important}.sesc_bg_color_5 {	background:#d0d0ce!important}.sesc_bg_color_6 {	background:#2e3192!important}.sesc_bg_color_7 {	background:#007dc6!important}.sesc_bg_color_8 {	background:#00abbd!important}.sesc_bg_color_9 {	background:#d71921!important}.sesc_bg_color_10 {	background:#e85d0a!important}.sesc_bg_color_11 {	background:#fff200!important}.sesc_bg_color_12 {	background:#000!important}#iframebarraportalsesc.sesc_bg_color_2 h1 a,#iframebarraportalsesc.sesc_bg_color_4 h1 a,#iframebarraportalsesc.sesc_bg_color_6 h1 a,#iframebarraportalsesc.sesc_bg_color_7 h1 a,#iframebarraportalsesc.sesc_bg_color_8 h1 a,#iframebarraportalsesc.sesc_bg_color_9 h1 a,#iframebarraportalsesc.sesc_bg_color_10 h1 a,#iframebarraportalsesc.sesc_bg_color_12 h1 a {	background-position:0 -46px}#iframebarraportalsesc.sesc_bg_color_2 a,#iframebarraportalsesc.sesc_bg_color_4 a,#iframebarraportalsesc.sesc_bg_color_6 a,#iframebarraportalsesc.sesc_bg_color_7 a,#iframebarraportalsesc.sesc_bg_color_8 a,#iframebarraportalsesc.sesc_bg_color_9 a,#iframebarraportalsesc.sesc_bg_color_10 a,#iframebarraportalsesc.sesc_bg_color_12 a {	color:#fff!important}#iframebarraportalsesc.sesc_bg_color_3 h1 a,#iframebarraportalsesc.sesc_bg_color_5 h1 a,#iframebarraportalsesc.sesc_bg_color_11 h1 a {	background-position:0 0}#iframebarraportalsesc.sesc_bg_color_3 a,#iframebarraportalsesc.sesc_bg_color_5 a,#iframebarraportalsesc.sesc_bg_color_11 a {	color:#000!important}@media screen and (max-width:900px) {	#sesc_header_menu li a {		padding:0 5px	}	#sesc_header_menu li {		margin-right:5px	}}@media screen and (max-width:800px) {	#sesc_header_menu ul {		width:100%;		display:none;		top:70px;		z-index:999999;		position:absolute	}	#sesc_header_menu ul.active {		display:block	}	#sesc_header_menu li {		float:none;		border-bottom:1px solid #e3e3e3	}	#sesc_header_menu li:first-child {		border-top:1px solid #e3e3e3	}	#sesc_header_menu li a {		padding:10px 30px;		font-size:22px	}	#sesc_menu_toggle {		display:block;		clear:right	}}
+
+
+.max-h {
+	height: 100%;
+  overflow: auto;
+}
+.center-block {
+	float: none;
+}
+img.wp-post-image {
+  border:none;
+  box-shadow:3px 3px 2px rgba(0,0,0,0.6);
+  cursor:pointer;
+  height:auto;
+  margin:10% auto;
+  overflow: hidden;
+  text-align: center;
+  vertical-align:middle;
+  width:100%;
+}
+img.wp-post-image:hover {
+  box-shadow:3px 3px 9px rgba(0,0,0,0.9);
+}
+.circulos  img {
+/*	background: #ad0716;
+  background:#9e4136; */
+  border:none;
+  height:auto;
+  padding: 0;
+  width:100%;
+}
+
+
+#header {
+  background:url(img/bg.png) center center no-repeat;
+  background-size:cover;
+  color: #000;
+  height:calc(100vh - 81px);
+  overflow:auto;
+  transition: 1s ease-in-out;
+}
+#header.container-fluid {
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+#header.container-fluid > .row > .col-xs-3, #header > .row > .col-xs-10 > div, #header .nav li.active, #header .nav li a:hover, #header .nav li a:active, #header .nav li a:focus {
+  background: rgba(0,0,0,0.66);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.9);
+  outline: 0;
+}
+#header .nav, #header > .row > .col-xs-10 > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#header .nav a, #header {
+  color: #FFF;
+}
+
+
+.navbar {
+  margin-bottom: 0;
+  border:0;
+  height: 40px;
+}
+.navbar .logo {
+  margin-top: -25px;
+}
+
+
+
+.minimizar {
+  height:30px !important;
+  padding-top: 3px !important;
+  transition: 1s ease-in-out;
+}
+.minimizar .container-fluid {
+  height:0;
+  display:none;
+  transition: 0.5s ease-in-out;
+}
+.minimizar .img {
+  height:24px;
+  margin:5px auto;
+  position: relative;
+  width:24px;
+  z-index: 23;
+}
+.minimizar img {
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  transition: 0.2s ease-in-out 0.1s;
+}
+
+#header h2 {
+	color: #DDDDDD;
+	text-shadow: 2px 2px 0px #000000;
+}
+.modal-body {
+  color: #000;
+}
+.modal-lg .modal-body {
+	background: transparent;
+	box-shadow: none;
+	height: 90%;
+}
+.modal-body .img-circle {
+	margin-top: -10vh;
+}
+.modal-lg .modal-body .texto {
+  background: rgba(0,0,0,0.66);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.9);
+  color: #DDDDDD;
+	height: 55vh;
+	margin-top: -20px;
+	overflow-y: scroll;
+	padding:30px 15px;
+	vertical-align: middle;
+}
+
+
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+
+
