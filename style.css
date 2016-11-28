@@ -33,7 +33,7 @@ body {
 .center-block {
 	float: none;
 }
-img.wp-post-image {
+img.wp-post-image, img.img-responsive {
   border:none;
   box-shadow:3px 3px 2px rgba(0,0,0,0.6);
   cursor:pointer;
@@ -44,7 +44,7 @@ img.wp-post-image {
   vertical-align:middle;
   width:100%;
 }
-img.wp-post-image:hover {
+img.wp-post-image:hover, img.img-responsive:hover {
   box-shadow:3px 3px 9px rgba(0,0,0,0.9);
 }
 .circulos  img {
