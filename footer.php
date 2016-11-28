@@ -69,9 +69,8 @@
 
 	</div>
 	</div>
-	
-			<link rel="stylesheet" type="text/css" href="<?php get_stylesheet_directory() ?>wp-content/themes/ultrabootstrap-child/css/menu_sideslide.css">
-		<script type="text/javascript" src="<?php get_stylesheet_directory() ?>wp-content/themes/ultrabootstrap-child/js/sideslide.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/classie.js"></script>	
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/sideslide.js"></script>
 		<?php wp_footer(); ?>
 	</body>
 </html>
