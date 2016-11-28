@@ -15,8 +15,6 @@ This theme built with Twitter Bootstrap v.3. It is basic theme with basic style 
 */
 
 body {
-  background:url(img/bg.png) center center no-repeat;
-  background-size:cover;
   background-color: #e6e8fa !important;
 }
 
@@ -62,6 +60,8 @@ img.wp-post-image:hover, img.img-responsive:hover {
 }
 #header.container-fluid {
 	padding-bottom: 2%;
+  background-size:cover;
+ 
 }
 
 #header.container-fluid > .row > .col-xs-3, #header > .row > .col-xs-10 > div, #header .nav li.active, #header .nav li a:hover, #header .nav li a:active, #header .nav li a:focus {
@@ -159,15 +159,15 @@ img.wp-post-image:hover, img.img-responsive:hover {
 .single-post .feat-image {
   max-height:560px;
   overflow:hidden;
-  margin-top:-200px;
+  margin-top:-360px;
 
 }
 
 .single-post .titulo {
   font-weight: bold;
   text-transform: uppercase;
-  margin-top:-180px;
-  padding-bottom: 180px;
+  margin-top:-240px;
+  padding-bottom: 240px;
   text-align: center;
 }
 
