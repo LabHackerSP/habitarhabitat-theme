@@ -162,12 +162,9 @@ img.wp-post-image:hover {
 }
 
 
-
-
-
 /* Single Page CSS */
 .single-post .feat-image {
   max-height:450px;
   overflow:hidden;
+  margin-top:-200px;
 }
-

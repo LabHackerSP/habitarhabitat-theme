@@ -8,13 +8,13 @@
 ?>
 
 <div class="page-title">
-  <h1><?php the_title(); ?></h1>
-
 <?php if (has_post_thumbnail()) : ?>
         <div class='feat-image'>
           <?php the_post_thumbnail('full'); ?>
         </div>
 <?php endif; ?> 
+
+  <h1><?php the_title(); ?></h1>
 </div>
     
 
