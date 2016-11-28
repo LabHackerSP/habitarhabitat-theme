@@ -9,16 +9,17 @@
 
 <div class="page-title">
   <h1><?php the_title(); ?></h1>
-</div>
 
-<div class="single-post">
-   <div class="post-content">
-      <?php if (has_post_thumbnail()) : ?>
+<?php if (has_post_thumbnail()) : ?>
         <div class='feat-image'>
           <?php the_post_thumbnail('full'); ?>
         </div>
-      <?php endif; ?> 
+<?php endif; ?> 
+</div>
     
+
+<div class="single-post">
+   <div class="post-content">
     <article class="spacer">
       <?php the_content();?>
 
