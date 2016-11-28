@@ -15,8 +15,11 @@ This theme built with Twitter Bootstrap v.3. It is basic theme with basic style 
 */
 
 body {
-	background:url(img/bg.png) top center repeat;
+  background:url(img/bg.png) center center no-repeat;
+  background-size:cover;
+  background-color: #e6e8fa;
 }
+
 @font-face {
 	font-family:'Bliss2Regular';
 	src:url('http://www.sescsp.org.br/fonts/Bliss2R.eot');
@@ -55,12 +58,7 @@ img.wp-post-image:hover {
 
 
 #header {
-  background:url(img/bg.png) center center no-repeat;
-  background-size:cover;
   color: #000;
-  height:calc(100vh - 81px);
-  overflow:auto;
-  transition: 1s ease-in-out;
 }
 #header.container-fluid {
 	padding-bottom: 2%;
