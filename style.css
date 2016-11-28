@@ -160,6 +160,10 @@ img.wp-post-image:hover, img.img-responsive:hover {
   overflow:hidden;
 }
 
+.single-post .feat-image img {
+  margin:0px !important;
+}
+
 .single-post .titulo {
   font-weight: bold;
   text-transform: uppercase;
