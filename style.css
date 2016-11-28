@@ -164,7 +164,16 @@ img.wp-post-image:hover {
 
 /* Single Page CSS */
 .single-post .feat-image {
-  max-height:450px;
+  max-height:560px;
   overflow:hidden;
   margin-top:-200px;
+
+}
+
+.single-post .titulo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top:-125px;
+  padding-bottom: 125px;
+  text-align: center;
 }

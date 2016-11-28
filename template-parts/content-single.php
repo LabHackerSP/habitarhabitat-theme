@@ -14,7 +14,7 @@
         </div>
 <?php endif; ?> 
 
-  <h1><?php the_title(); ?></h1>
+  <h1 class='titulo'><?php the_title(); ?></h1>
 </div>
     
 
