@@ -65,7 +65,6 @@ img.wp-post-image:hover {
 }
 
 #header.container-fluid > .row > .col-xs-3, #header > .row > .col-xs-10 > div, #header .nav li.active, #header .nav li a:hover, #header .nav li a:active, #header .nav li a:focus {
-  background: rgba(0,0,0,0.66);
   box-shadow: 0 5px 15px rgba(0,0,0,0.9);
   outline: 0;
 }
