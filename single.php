@@ -16,11 +16,7 @@ get_header(); ?>
 
         <?php endwhile; // End of the loop. ?>
 
-    
-        <!-- <?php comments_template(); ?> -->
-
-
-                  </div><!-- /.end of deatil-content -->
+	   </div><!-- /.end of deatil-content -->
   			 
 </section> <!-- /.end of section -->  
 <?php get_footer(); ?>
