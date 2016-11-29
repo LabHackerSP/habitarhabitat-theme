@@ -11,10 +11,11 @@ get_header(); ?>
 <div class="col-md-8 col-md-offset-2">
         <?php if ( have_posts() ) : ?>
 
-                <!-- <?php
-                    the_archive_title( '<h4>', '</h4>' );
-                    the_archive_description( '<div class="taxonomy-description">', '</div>' );
-                ?> -->
+                    <h2><?php
+                    $categoria = get_the_category();
+                    $nomeCategoria = $categoria[0]->cat_name;
+                    echo $nomeCategoria;
+                    ?></h2>
         <div class="row">
             <?php /* Start the Loop */ ?>
             <?php while ( have_posts() ) : the_post(); ?>

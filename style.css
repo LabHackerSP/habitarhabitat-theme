@@ -16,6 +16,7 @@ This theme built with Twitter Bootstrap v.3. It is basic theme with basic style 
 
 body {
   background-color: #e6e8fa !important;
+  font-size: 16px;
 }
 
 font-face {
@@ -111,9 +112,13 @@ img.wp-post-image:hover, img.img-responsive:hover {
   transition: 0.2s ease-in-out 0.1s;
 }
 
-#header h2 {
-	color: #DDDDDD;
+#header h2, h2, h1 {
+	color: #FFFFFF;
 	text-shadow: 2px 2px 0px #000000;
+  text-transform: capitalize;
+}
+h3 {
+  text-transform: uppercase;
 }
 .modal-body {
   color: #000;
@@ -179,4 +184,10 @@ img.wp-post-image:hover, img.img-responsive:hover {
 
 .logo-menu {
   display: none !important; /* hackish para remover o menu */
+}
+
+
+
+.post-content p {
+  font-size: 18px;
 }
