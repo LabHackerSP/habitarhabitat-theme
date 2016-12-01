@@ -6,7 +6,7 @@
  * @package ultrabootstrap
  */
 get_header(); ?>
-<div class="col-xs-8 col-xs-offset-2 max-h">
+<div class="col-xs-8 col-xs-offset-2">
 <section class="page-section">
           
       <div class="<?php echo $class;?> detail-content">

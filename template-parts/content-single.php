@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="page-title">
+<!--div class="page-title">
 <?php if (has_post_thumbnail()) : ?>
         <div class='feat-image'>
           <?php the_post_thumbnail('full'); ?>
@@ -15,7 +15,7 @@
 <?php endif; ?> 
 
   <h1 class='titulo'><?php the_title(); ?></h1>
-</div>
+</div-->
     
 
 <div class="single-post">

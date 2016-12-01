@@ -115,7 +115,7 @@ img.wp-post-image:hover, img.img-responsive:hover {
 #header h2, h2, h1 {
 	color: #FFFFFF;
 	text-shadow: 2px 2px 0px #000000;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 h3 {
   text-transform: uppercase;
