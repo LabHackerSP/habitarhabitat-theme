@@ -24,104 +24,45 @@
 <body <?php body_class(); ?>>
 <?php $header_text_color = get_header_textcolor();?>
 
+	<?php include 'sesc-header.php'; ?>
+	<?php include 'slidemenu.php'; ?>
 
-	<section id="iframebarraportalsesc" class="">
-		<div id="sesc_header_menu">
-			<h1><a href="http://www.sescsp.org.br/" title="Sesc SP" target="_top">Sesc SP</a></h1>
-			<a href="javascript:controlMenu(this);" title="Menu" id="sesc_menu_toggle"><i class="fa fa-chevron-down fa-2x"></i></a>
-			<ul class="">
-				<li><a href="http://www.sescsp.org.br/programacao/" title="programação" target="_top">programação</a></li>
-				<li><a href="http://www.sescsp.org.br/aulas/" title="cursos" target="_top">cursos</a></li>
-				<li><a href="http://www.sescsp.org.br/turismo/" title="turismo" target="_top">turismo</a></li>
-				<li><a href="http://www.sescsp.org.br/unidades/" title="unidades" target="_top">unidades</a></li>
-				<li><a href="http://www.sescsp.org.br/servicos/" title="serviços" target="_top">serviços</a></li>
-				<li><a href="http://www.sescsp.org.br/online/" title="conteudoteca" target="_top">conteudoteca</a></li>
-				<li><a href="http://www.sescsp.org.br/loja/" title="livraria" target="_top">livraria</a></li>
-			</ul>
-		</div>
-	</section>
-
-<header> 	
-<section class="logo-menu">
-	<nav class="navbar navbar-default navbar-fixed-bottom">
-		<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-				      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					        <span class="sr-only"><?php _e('Toggle navigation' , 'ultrabootstrap' ); ?></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-				      	</button>
-				      	<div class="logo-tag">
-				      		
-				      			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php if ( has_custom_logo()): the_custom_logo(); else: ?>
-				      			<h1 class="site-title" style="color:<?php echo "#". $header_text_color;?>"><?php echo bloginfo( 'name' ); ?></h1>
-				      			<h2 class="site-description" style="color:<?php echo "#". $header_text_color;?>"><?php bloginfo('description'); ?></h2><?php endif; ?></a>                     
-      						
-      					</div>
-				    </div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<form  class="navbar-form navbar-right" role="search">
-							<ul class="nav pull-right">
-								<div class="main-search">
-									<button class="btn btn-search" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-									  <i class="fa fa-search"></i>
-									</button>
-									<div class="search-box collapse" id="collapseExample">
-											<div class="well search-well">
-										    <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                          						<input type="text" class="form-control" placeholder="Search a keyword" value="<?php echo get_search_query(); ?>" name="s">
-                          					</form>
-											</div>
-									</div>
-								</div>
-							</ul>
-						</form>
-  							
-						<?php
-				            wp_nav_menu( array(
-				                'menu'              => 'primary',
-				                'theme_location'    => 'primary',
-				                'depth'             => 8,
-				                'container'         => 'div',
-				                'menu_class'        => 'nav navbar-nav navbar-left',
-				                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-				                'walker'            => new wp_bootstrap_navwalker())
-				            );
-				        ?>
-						<?php
-				            wp_nav_menu( array(
-				                'menu'              => 'secondary',
-				                'theme_location'    => 'footer',
-				                'depth'             => 8,
-				                'container'         => 'div',
-				                'menu_class'        => 'nav navbar-nav navbar-right',
-				                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-				                'walker'            => new wp_bootstrap_navwalker())
-				            );
-				        ?>
-				    </div> <!-- /.end of collaspe navbar-collaspe -->
-	</div> <!-- /.end of container -->
-	</nav>
-</section> <!-- /.end of section -->
-</header>
-<?php 
-
- include 'slidemenu.php';
-
-?>
-	<?php if ( is_front_page() && is_home() ) : ?>		
-		<div id='header' class="container-fluid" style="background-image:url('<?php header_image(); ?>');">
+	<?php if ( is_front_page() && is_home() ) : ?>
+		<header id='header' class="container-fluid" style="background-image:url('<?php header_image(); ?>');">
 			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-				<div class="col-xs-10 col-xs-offset-1 logo-tag" style="margin-top:40px;margin-bottom:200px;">
-					<img src="http://labhacker.org.br/habitar-habitat/wordpress/wp-content/uploads/2016/11/logoBranco-1.png" alt="logoBranco.png" itemprop="logo" class="custom-logo col-xs-2 col-xs-ofsset-5 center-block" />
+				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 logo-tag" style="margin-top:80px;margin-bottom:160px;">
+					<img src="http://labhacker.org.br/habitar-habitat/wordpress/wp-content/uploads/2016/11/logoBranco-1.png" alt="logoBranco.png" itemprop="logo" class="custom-logo center-block col-xs-10 col-sm-6 col-md-4 col-lg-3" />
 					<h2 class="site-description text-center" style="color:<?php echo "#". $header_text_color;?>"><?php bloginfo('description'); ?></h2>
 				</div>
 			</div>
+		</header>
+	<?php elseif (is_category()) : ?>
+		<header id='header' class="container-fluid" style="background-image:url('<?php if(function_exists('z_taxonomy_image_url') && z_taxonomy_image_url() != null) : echo z_taxonomy_image_url(); else : header_image(); endif; ?>');">
+			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 logo-tag" style="margin-top:240px;margin-bottom:40px;">
+                    <h1><?php
+                    $categoria = get_the_category();
+                    $nomeCategoria = $categoria[0]->cat_name;
+                    echo $nomeCategoria;
+                    ?></h1>
+				</div>
+			</div>
+		</header>
+		<div id="description" class="container">
+			<div class="row">
+				<?php the_archive_description( '<div class="taxonomy-description col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 collapse in" id="description_txt">
+  <div class="well">', '</div></div>' ); ?>
+				<!--a class="btn btn-primary col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" role="button" data-toggle="collapse" href="#description_txt" aria-expanded="false" aria-controls="description_txt">Leia mais</a-->
+			</div>
 		</div>
+	<?php elseif (is_page()) : ?>
+		<header id='header' class="container-fluid" style="background-image:url('<?php if(has_post_thumbnail()) : echo the_post_thumbnail('url'); else : header_image(); endif; ?>');">
+			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 logo-tag" style="margin-top:240px;margin-bottom:40px;">
+                    <h1><?php the_title(); ?></h1>
+				</div>
+			</div>
+		</header>
 	<?php endif; ?>
-	<div id='conteudo' class="">
+	<div id='conteudo' class="container">
 		<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">

@@ -10,11 +10,6 @@
 get_header(); ?>
 <div class="col-md-8 col-md-offset-2">
         <?php if ( have_posts() ) : ?>
-
-                <!-- <?php
-                    the_archive_title( '<h4>', '</h4>' );
-                    the_archive_description( '<div class="taxonomy-description">', '</div>' );
-                ?> -->
         <div class="row">
             <?php /* Start the Loop */ ?>
             <?php while ( have_posts() ) : the_post(); ?>

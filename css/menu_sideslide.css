@@ -3,6 +3,7 @@
 
 .menu-wrap li {
 	list-style: none;
+	font-size: 14px;
 }
 
 .menu-wrap a {
@@ -50,7 +51,7 @@
 /* Menu Button */
 
 
-.menu-item:nth-of-type(1), .menu-item:nth-of-type(2), .menu-item:nth-of-type(3), .menu-item:nth-of-type(4) {
+.menu-item:nth-of-type(1), .menu-item:nth-of-type(2), .menu-item:nth-of-type(3),.menu-item:nth-of-type(4), .menu-item:last-of-type, .menu-item:nth-last-of-type(2) {
 	margin-left: -15px;
 	font-weight: bolder;
 }
@@ -133,7 +134,7 @@
 	width: 300px;
 	height: 100%;
 	background: #252525;
-	padding: 2.5em 1.5em 0;
+	padding: 1.5em 0 0.5em 0;
 	font-size: 1.15em;
 	-webkit-transform: translate3d(-320px,0,0);
 	transform: translate3d(-320px,0,0);
