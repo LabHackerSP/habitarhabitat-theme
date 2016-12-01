@@ -1,12 +1,6 @@
 <div class="menu-wrap">
 	<nav class="menu">
 		<div class="icon-list">
-<!-- 			<a href="#"><i class="fa fa-fw fa-star-o"></i><span>Favorites</span></a>
-			<a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Alerts</span></a>
-			<a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Messages</span></a>
-			<a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a>
-			<a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Analytics</span></a>
-			<a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a> -->
 			<a href="<?php echo home_url( '/' );  ?>"><img id="menu-logo" src="<?php echo content_url(); ?>/uploads/2016/11/logoBranco-1.png"></a>
 			
 			<?php
@@ -20,6 +14,18 @@
 	                'walker'            => new wp_bootstrap_navwalker())
 	            );
 	        ?>
+
+			<!--form  class="navbar-form" role="search"  method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<ul class="nav">
+					<div class="main-search">
+  						<input type="text" class="form-control" placeholder="Buscar" value="<?php echo get_search_query(); ?>" name="s">
+						<button class="btn btn-search" type="submit" >
+						  <i class="fa fa-search"></i>
+						</button>
+					</div>
+				</ul>
+			</form-->
+
 		</div>
 	</nav>
 	<button class="close-button" id="close-button">Fechar Menu</button>
@@ -27,7 +33,4 @@
 <button class="menu-button" id="open-button">Abrir Menu</button>
 
 <script type="text/javascript" >
-	
-
-
 </script>
