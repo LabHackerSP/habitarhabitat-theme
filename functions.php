@@ -23,4 +23,10 @@ function wptp_add_categories_to_attachments() {
 }  
 add_action( 'init' , 'wptp_add_categories_to_attachments' ); 
 
+// diminui o texto de excerpt
+function wpdocs_custom_excerpt_length( $length ) {
+    return 25;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
 ?>
