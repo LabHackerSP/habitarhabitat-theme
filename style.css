@@ -244,3 +244,10 @@ h3 {
 .post-content p {
   font-size: 18px;
 }
+
+.footers {
+  height:190px;
+  background: rgba(0,0,0,0.3);;
+  color:#fff;
+  font-size: 14px;
+}
