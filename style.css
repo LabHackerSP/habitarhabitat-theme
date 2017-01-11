@@ -186,8 +186,18 @@ h3 {
   margin: 10px auto 20px auto;
 }
 
+.post-block .summary {
+  padding-left:15px;
+  padding-right:15px;
+}
+
 .post-block .tags {
   text-transform: uppercase;
+}
+
+.post-block .txt {
+  height:80px;
+  overflow:hidden;
 }
 
 .post-block .readmore {

@@ -43,7 +43,10 @@
         <div class="tags">
             <p><?php echo $terms; ?></p>
         </div>
-        <?php the_excerpt('ultrabootstrap_excerpt_length');?>
+        
+        <div class="txt">
+            <?php the_excerpt('ultrabootstrap_excerpt_length');?>
+        </div>
         
         <div class="readmore">
             <a href="<?php the_permalink(); ?>" rel="bookmark" title="">Leia mais </a>
