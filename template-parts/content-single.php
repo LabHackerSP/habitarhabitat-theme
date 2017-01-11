@@ -41,8 +41,12 @@
     ) );
     $terms = rtrim( trim( str_replace( '<br />',  $separator, $terms ) ), $separator );
     // Display post categories.
-    echo '<p>' . $terms . '</p>';
     }; ?>
+
+    <div class="tags">
+            <p><?php echo $terms; ?></p>
+    </div>
+   
       <?php the_content();?>
 
       <?php

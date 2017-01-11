@@ -121,7 +121,9 @@ form.contato input.botao {
 }
 #conteudo {
   margin-bottom: 60px;
+  border-radius:5px;
 }
+
 div.navigation.col-xs-12 {
   margin: 40px auto;
 }
