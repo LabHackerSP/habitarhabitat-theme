@@ -13,7 +13,7 @@
 
 		<!-- Tab to top scrolling -->
 	<footer>
-	<div class="container footers">
+	<div class="footers">
         <div class="row">
             <?php dynamic_sidebar( 'footer-1' ); ?>
             <?php dynamic_sidebar( 'footer-2' ); ?>
