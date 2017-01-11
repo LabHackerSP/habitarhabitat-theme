@@ -59,6 +59,7 @@
 		</div>
 	<?php elseif (is_page()) : ?>
 		<header id='header' class="container-fluid" style="background-image:url('<?php if(has_post_thumbnail()) : echo the_post_thumbnail('url'); else : header_image(); endif; ?>');">
+			<div class="blackblock"></div>
 			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="col-xs-10 col-xs-offset-1 logo-tag">
                     <h1><?php the_title(); ?></h1>
@@ -67,6 +68,7 @@
 		</header>
 	<?php elseif (is_single()) : ?>
 		<header id='header' class="container-fluid" style="background-image:url('<?php if(has_post_thumbnail()) : echo the_post_thumbnail_url('full'); else : header_image(); endif; ?>');">
+			<div class="blackblock"></div>
 			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 logo-tag">
                     <h1><?php the_title(); ?></h1>
