@@ -84,6 +84,7 @@ form.contato input.botao {
   height: 460px;
   margin-bottom: -50px;
   position: relative;
+  z-index: -999;
 }
 #header.container-fluid h1 {
   margin-top: 360px;
