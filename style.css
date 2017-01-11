@@ -110,6 +110,14 @@ form.contato input.botao {
   width:100%;
   height:100%;
 }
+
+#header .logo-tag {
+  text-align:center;
+}
+
+#header .logo-tag h1 {
+  font-weight:bolder;
+}
 #conteudo {
   margin-bottom: 60px;
 }
