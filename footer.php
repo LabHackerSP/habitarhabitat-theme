@@ -23,9 +23,27 @@
     </div>
 	</footer>
 
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/classie.js"></script>	
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/sideslide.js"></script>
-		<?php wp_footer(); ?>
-	</body>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/classie.js"></script>	
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/sideslide.js"></script>
+	<?php wp_footer(); ?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+	$.ajax({
+	  context: this,
+	  success: function(json) {}
+	});
+	$(document).ready(function(){
+	  $("a.leia-mais").click(function(){
+	  	$(this).find("i.glyphicon").toggleClass("glyphicon-triangle-bottom").toggleClass("glyphicon-triangle-top");
+	  	$(this).parent("#description_txt").toggleClass("active");
+	  });
+	  $("#header li").click(function(){
+	  	$("this div.well").toggleClass("active");
+	  	$(this).siblings("li").removeClass("active");
+	    $(".collapse.fade").removeClass("in");
+	  });
+	});
+	</script>
+</body>
 </html>
 

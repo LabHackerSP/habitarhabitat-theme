@@ -24,12 +24,13 @@
   //user posted variables
   $name = $_POST['message_name'];
   $email = $_POST['message_email'];
+  $assunto = $_POST['message_assunto'];
   $message = $_POST['message_text'];
   $human = $_POST['message_human'];
  
   //php mailer variables
   $to = get_option('admin_email');
-  $subject = "Someone sent a message from ".get_bloginfo('name');
+  $subject = '[H|H _ Contato] '.$assunto. "\r\n";
   $headers = 'From: '. $email . "\r\n" .
     'Reply-To: ' . $email . "\r\n";
  
@@ -89,12 +90,18 @@
  
 <div id="respond">
   <?php echo $response; ?>
-  <form action="<?php the_permalink(); ?>" method="post">
-    <p><label for="name">Name: <span>*</span> <br><input type="text" name="message_name" value="<?php echo esc_attr($_POST['message_name']); ?>"></label></p>
-    <p><label for="message_email">Email: <span>*</span> <br><input type="text" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>"></label></p>
-    <p><label for="message_text">Message: <span>*</span> <br><textarea type="text" name="message_text"><?php echo esc_textarea($_POST['message_text']); ?></textarea></label></p>
+  <form action="<?php the_permalink(); ?>" method="post" id=contato>
+    <p><label for="name">Nome: <span>*</span>
+    <input alt="seu nome *" placeholder='seu nome' type="text" name="message_name" value="<?php echo esc_attr($_POST['message_name']); ?>" data-validation=required /></label></p>
+    <p><label for="message_email">Email: <span>*</span>
+    <input type="mail" alt="seu e-mail *" placeholder='seu e-mail' name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>"></label></p>
+    <p><label for="message_assunto">Assunto:
+    <input type=text alt="assunto" placeholder='assunto' name=message_assunto data-validation=required /></label></p>
+    <p><label for="message_text">Mensagem: <span>*</span>
+    <textarea class=caixa type="text" rows=4 name="message_text"><?php echo esc_textarea($_POST['message_text']); ?></textarea></label></p>
     <input type="hidden" name="submitted" value="1">
-    <p><input type="submit"></p>
+    <p><input data-validation="recaptcha" data-validation-recaptcha-sitekey="[RECAPTCHA_SITEKEY]"></p>
+    <p><input class=botao type=submit title="enviar" value=enviar /></p>
   </form>
 </div>
 
@@ -107,3 +114,15 @@
 </section><!-- /.end of section -->
 </div>
 <?php get_footer(); ?>
+<script src="<?php echo get_template_directory_uri(); ?>-child/js/jquery.form-validator.min.js"></script>
+<script>
+  $.validate({
+    lang: 'pt',
+    form: '#respond, #contato',
+    borderColorOnError : '#9e4136',
+    addValidClassOnAll : true,
+    modules : 'security',
+    reCaptchaSiteKey: '6LegOygTAAAAAN1xm0d3trIyoZy9HLtsMlF6sZYM',
+    reCaptchaTheme: 'light'
+  });
+</script>

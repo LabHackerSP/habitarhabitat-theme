@@ -31,7 +31,7 @@
 		<header id='header' class="container-fluid" style="background-image:url('<?php header_image(); ?>');">
 			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 logo-tag" style="margin-top:80px;margin-bottom:160px;">
-					<img src="http://labhacker.org.br/habitar-habitat/wordpress/wp-content/uploads/2016/11/logoBranco-1.png" alt="logoBranco.png" itemprop="logo" class="custom-logo center-block col-xs-10 col-sm-6 col-md-4 col-lg-3" />
+					<img src="http://labhacker.org.br/habitar-habitat/wordpress/wp-content/uploads/2016/11/logoBranco-1.png" alt="logoBranco.png" itemprop="logo" class="custom-logo center-block col-xs-8 col-sm-6 col-md-4 col-lg-2" />
 					<h2 class="site-description text-center" style="color:<?php echo "#". $header_text_color;?>"><?php bloginfo('description'); ?></h2>
 				</div>
 			</div>
@@ -39,7 +39,7 @@
 	<?php elseif (is_category()) : ?>
 		<header id='header' class="container-fluid" style="background-image:url('<?php if(function_exists('z_taxonomy_image_url') && z_taxonomy_image_url() != null) : echo z_taxonomy_image_url(); else : header_image(); endif; ?>');">
 			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 logo-tag" style="margin-top:240px;margin-bottom:40px;">
+				<div class="col-xs-10 col-xs-offset-1 logo-tag">
                     <h1><?php
                     $categoria = get_the_category();
                     $nomeCategoria = $categoria[0]->cat_name;
@@ -50,15 +50,15 @@
 		</header>
 		<div id="description" class="container">
 			<div class="row">
-				<?php the_archive_description( '<div class="taxonomy-description col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 collapse in" id="description_txt">
-  <div class="well">', '</div></div>' ); ?>
+				<?php the_archive_description( '<div class="taxonomy-description col-xs-10 col-xs-offset-1 active" id="description_txt"><div class="well">', '</div><a class="pull-right leia-mais" href="#description_txt"> <i class="glyphicon glyphicon-triangle-bottom"></i></a></div>' ); ?>
+            
 				<!--a class="btn btn-primary col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" role="button" data-toggle="collapse" href="#description_txt" aria-expanded="false" aria-controls="description_txt">Leia mais</a-->
 			</div>
 		</div>
 	<?php elseif (is_page()) : ?>
 		<header id='header' class="container-fluid" style="background-image:url('<?php if(has_post_thumbnail()) : echo the_post_thumbnail('url'); else : header_image(); endif; ?>');">
 			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 logo-tag" style="margin-top:240px;margin-bottom:40px;">
+				<div class="col-xs-10 col-xs-offset-1 logo-tag">
                     <h1><?php the_title(); ?></h1>
 				</div>
 			</div>
@@ -66,7 +66,7 @@
 	<?php elseif (is_single()) : ?>
 		<header id='header' class="container-fluid" style="background-image:url('<?php if(has_post_thumbnail()) : echo the_post_thumbnail_url('full'); else : header_image(); endif; ?>');">
 			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 logo-tag" style="margin-top:240px;margin-bottom:40px;">
+				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 logo-tag">
                     <h1><?php the_title(); ?></h1>
 				</div>
 			</div>

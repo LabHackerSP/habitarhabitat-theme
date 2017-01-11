@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-<div class="col-md-8 col-md-offset-2">
+<div class="col-md-10 col-md-offset-1">
         <?php if ( have_posts() ) : ?>
         <div class="row">
             <?php /* Start the Loop */ ?>
@@ -28,12 +28,27 @@ get_header(); ?>
 
             
 
-        <?php else : ?>
+        <?php 
 
-            <?php get_template_part( 'template-parts/content', 'none' ); ?>
+        /* 
+        * else : ?>
+        *   <?php get_template_part( 'template-parts/content', 'none' );
+        */ ?>
 
         <?php endif; ?>
         </div>
-        <div class="page-nav"><?php the_posts_navigation(); ?></div>
+        <?php /* the_posts_navigation(); */ ?>
+        <div class="navigation col-xs-12">
+        <?php if (get_previous_posts_link() ) { ?>
+            <div class="pull-left">
+            <?php previous_posts_link('<i class="glyphicon glyphicon-triangle-left"></i>mais recentes'); ?>
+            </div>
+            <?php } ?>
+        <?php if ( get_next_posts_link() ) { ?>
+            <div class="pull-right">
+            <?php next_posts_link('mais antigos<i class="glyphicon glyphicon-triangle-right"></i>'); ?>
+            </div>
+        <?php } ?>
+        </div><!-- .navigation -->
 </div>
 <?php get_footer(); ?>

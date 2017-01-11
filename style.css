@@ -19,10 +19,11 @@ body {
   font-size: 16px;
 }
 
-font-face {
+@font-face {
 	font-family:'Bliss2Regular';
 	src:url('http://www.sescsp.org.br/fonts/Bliss2R.eot');
-	src:url('http://www.sescsp.org.br/fonts/Bliss2R.eot?#iefix') format('embedded-opentype'),url('http://www.sescsp.org.br/fonts/Bliss2R.ttf') format('truetype')
+	src:url('http://www.sescsp.org.br/fonts/Bliss2R.eot?#iefix') format('embedded-opentype'),
+  url('http://www.sescsp.org.br/fonts/Bliss2R.ttf') format('truetype')
 }
 
 /* RÉGUA DO SESC */
@@ -37,13 +38,13 @@ img.wp-post-image, img.img-responsive {
   box-shadow:3px 3px 2px rgba(0,0,0,0.6);
   cursor:pointer;
   height:auto;
-  margin:10% auto;
+  margin: 0 auto;
   overflow: hidden;
   text-align: center;
   vertical-align:middle;
   width:100%;
 }
-img.wp-post-image:hover, img.img-responsive:hover {
+img.wp-post-image:hover, img.img-responsive:hover, a.leia-mais:hover i {
   box-shadow:3px 3px 9px rgba(0,0,0,0.9);
 }
 .circulos  img {
@@ -54,15 +55,38 @@ img.wp-post-image:hover, img.img-responsive:hover {
   padding: 0;
   width:100%;
 }
-
-
-#header {
-  color: #000;
+form.contato label {
+  text-align: right;
+  width: 100%;
 }
+form.contato input, form.contato textarea {
+  border:#9e4136 1px solid;
+  border-radius:0.75em;
+  color:#CCCCCC;
+  height:2.3em;
+  float: right;
+  width:70%;
+  margin:0em 4% 1em 4%;
+  outline: none;
+  padding:0.1em 0.7em;
+}
+form.contato textarea {
+  height:6.9em;
+}
+form.contato input.botao {
+  background-color: #9e4136;
+  width:25%;
+}
+
+
 #header.container-fluid {
-	padding-bottom: 2%;
+  background-position: center;
   background-size:cover;
- 
+  height: 460px;
+  margin-bottom: 30px;
+}
+#header.container-fluid h1 {
+  margin-top: 360px;
 }
 
 #header.container-fluid > .row > .col-xs-3, #header > .row > .col-xs-10 > div, #header .nav li.active, #header .nav li a:hover, #header .nav li a:active, #header .nav li a:focus {
@@ -76,7 +100,29 @@ img.wp-post-image:hover, img.img-responsive:hover {
 #header .nav a, #header {
   color: #FFF;
 }
-
+#conteudo {
+  margin-bottom: 60px;
+}
+div.navigation.col-xs-12 {
+  margin: 40px auto;
+}
+#description_txt .well {
+  height: auto;
+  max-height: 99999em;
+  overflow: visible;
+  transition: all 5s ease-in-out;
+}
+#description_txt.active .well {
+  height: 12em;
+  max-height: 12em;
+  overflow: hidden;
+}
+#description_txt a.leia-mais {
+  width: 120px;
+}
+#description_txt a.leia-mais i {
+  transition: all 1.2s ease-in-out;
+}
 
 .navbar {
   margin-bottom: 0;
@@ -120,6 +166,13 @@ img.wp-post-image:hover, img.img-responsive:hover {
 h3 {
   text-transform: uppercase;
 }
+.post-block {
+  margin-bottom: 20px;
+}
+.post-block h3 {
+  height: 2em;
+  margin: 10px auto 20px auto;
+}
 .modal-body {
   color: #000;
 }
@@ -159,7 +212,7 @@ h3 {
 }
 
 
-#conteudo a, #conteudo a:visited, #conteudo a:active {
+ a,  a:visited,  a:active, a:hover {
   color:#a5151e;
 }
 
