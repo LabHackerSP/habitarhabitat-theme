@@ -110,6 +110,8 @@ div.navigation.col-xs-12 {
   max-height: 99999em;
   overflow: visible;
   transition: all 5s ease-in-out;
+  border:none;
+  background-color: #fff;
 }
 #description_txt.active .well {
   height: 12em;
