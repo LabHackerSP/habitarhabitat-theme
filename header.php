@@ -28,8 +28,8 @@
 	<?php include 'slidemenu.php'; ?>
 
 	<?php if ( is_front_page() && is_home() ) : ?>
-		<div class="blackblock">
 		<header id='header' class="container-fluid" style="background-image:url('<?php header_image(); ?>');">
+			<div class="blackblock"></div>
 			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 logo-tag" style="margin-top:80px;margin-bottom:160px;">
 					<img src="http://labhacker.org.br/habitar-habitat/wordpress/wp-content/uploads/2016/11/logoBranco-1.png" alt="logoBranco.png" itemprop="logo" class="custom-logo center-block col-xs-8 col-sm-6 col-md-4 col-lg-2" />
@@ -37,10 +37,9 @@
 				</div>
 			</div>
 		</header>
-		</div>
 	<?php elseif (is_category()) : ?>
-		<div class="blackblock">
 		<header id='header' class="container-fluid" style="background-image:url('<?php if(function_exists('z_taxonomy_image_url') && z_taxonomy_image_url() != null) : echo z_taxonomy_image_url(); else : header_image(); endif; ?>');">
+			<div class="blackblock"></div>
 			<div class="row max-h panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="col-xs-10 col-xs-offset-1 logo-tag">
                     <h1><?php
@@ -51,7 +50,6 @@
 				</div>
 			</div>
 		</header>
-		</div>
 		<div id="description" class="container">
 			<div class="row">
 				<?php the_archive_description( '<div class="taxonomy-description col-xs-10 col-xs-offset-1 active" id="description_txt"><div class="well">', '</div><a class="pull-right leia-mais" href="#description_txt"> <i class="glyphicon glyphicon-triangle-bottom"></i></a></div>' ); ?>
