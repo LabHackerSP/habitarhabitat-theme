@@ -35,7 +35,6 @@ body {
 }
 img.wp-post-image, img.img-responsive {
   border:none;
-  box-shadow:3px 3px 2px rgba(0,0,0,0.6);
   cursor:pointer;
   height:auto;
   margin: 0 auto;
@@ -44,7 +43,7 @@ img.wp-post-image, img.img-responsive {
   vertical-align:middle;
   width:100%;
 }
-img.wp-post-image:hover, img.img-responsive:hover, a.leia-mais:hover i {
+a.leia-mais:hover i {
   box-shadow:3px 3px 9px rgba(0,0,0,0.9);
 }
 .circulos  img {
@@ -166,13 +165,39 @@ div.navigation.col-xs-12 {
 h3 {
   text-transform: uppercase;
 }
+
+.container {
+  background-color:#fff;
+}
+
 .post-block {
   margin-bottom: 20px;
+  background-color:#e5e5e5;
+  padding:8px;
+  font-size:14px;
 }
+
 .post-block h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
   height: 2em;
   margin: 10px auto 20px auto;
 }
+
+.post-block .tags {
+  text-transform: uppercase;
+}
+
+.post-block .readmore {
+  text-align: center;
+}
+.post-block .readmore a {
+  background-color: green;
+  color:#fff;
+  padding:8px;
+}
+
 .modal-body {
   color: #000;
 }

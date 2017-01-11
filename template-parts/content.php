@@ -39,12 +39,15 @@
     ) );
     $terms = rtrim( trim( str_replace( '<br />',  $separator, $terms ) ), $separator );
     // Display post categories.
-    echo '<p>' . $terms . '</p>';
     }; ?>
-
+        <div class="tags">
+            <p><?php echo $terms; ?></p>
+        </div>
         <?php the_excerpt('ultrabootstrap_excerpt_length');?>
         
-        <a href="<?php the_permalink(); ?>" rel="bookmark" title="" class="readmore">Leia mais </a>
+        <div class="readmore">
+            <a href="<?php the_permalink(); ?>" rel="bookmark" title="">Leia mais </a>
+        </div>
 
     </div>
 </div>
